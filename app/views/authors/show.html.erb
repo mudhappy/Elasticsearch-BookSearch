@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><%= "#{@author.first_name} #{@author.last_name}" %></h5>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_author_path(@author) %> |
+<%= link_to 'Back', authors_path %>

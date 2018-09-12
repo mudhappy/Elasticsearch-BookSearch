@@ -1,0 +1,13 @@
+<div class="col-sm-12 mt-3">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to book.name, book_path(book.id) %></h5>
+      <h6 class="card-subtitle mb-2 text-muted">
+        Author: <%= " #{book.author.first_name} #{book.author.last_name}" %> |
+        Pages: <%= "#{book.pages}" %>
+          | <%= book.book_category.title  %>
+      </h6>
+      <p><%= book.description.to_s.truncate(200, omission: ' [...]') %></p>
+    </div>
+  </div>
+</div>

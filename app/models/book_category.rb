@@ -1,11 +1,7 @@
-class Author < ApplicationRecord
+class BookCategory < ApplicationRecord
   has_many :books
 
   after_save :index_books_in_elasticsearch
-
-  def full_name
-    "#{first_name} #{last_name}"
-  end
 
   private
 
