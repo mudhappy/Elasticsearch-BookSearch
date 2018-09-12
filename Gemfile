@@ -33,8 +33,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Decorators
+gem 'draper'
+
 # Boostrap
 gem 'bootstrap', '~> 4.1.3'
+
+# Node Fix
+gem 'mini_racer'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -42,6 +48,15 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Elasticsearch
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
+
+# JQuery
+gem 'jquery-rails'
+
+# Pagination
+gem 'kaminari'
+
+# Fake data
+gem 'faker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

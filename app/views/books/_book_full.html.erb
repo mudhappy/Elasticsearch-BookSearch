@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title"><%= link_to book.name, book_path(book.id) %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      by
+      <%= "#{book.author.first_name} #{book.author.last_name}" %>
+      | <%= book.published_at %>
+      | <%= book.book_category.presence&.title %>
+    </h6>
+    <p><%= book.description %></p>
+    <ul>
+      <li>Pages: <%= book.pages %></li>
+      <li>ISBN: <%= book.isbn %></li>
+    </ul>
+  </div>
+</div>
